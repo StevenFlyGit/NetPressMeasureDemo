@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="671.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.llb.controller.mainController">
+   <children>
+      <SplitPane dividerPositions="0.23608017817371937" layoutX="296.0" prefHeight="671.0" prefWidth="983.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="660.0" prefWidth="745.0">
+               <children>
+                  <Button layoutX="299.0" layoutY="350.0" mnemonicParsing="false" onAction="#netTestButton" text="点击开始测试">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="requestUrl" layoutX="146.0" layoutY="137.0" prefHeight="30.0" prefWidth="505.0" />
+                  <Label layoutX="253.0" layoutY="49.0" text="网站压力测试工具">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="140.0" text="输入测试网址">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="215.0" text="初始并发数量">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="originRequestCount" layoutX="146.0" layoutY="212.0" prefHeight="30.0" prefWidth="259.0" />
+                  <Label layoutX="36.0" layoutY="500.0" text="测试结果">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="testResult" layoutX="152.0" layoutY="414.0" prefHeight="200.0" prefWidth="505.0" />
+                  <Label layoutX="36.0" layoutY="283.0" text="增加并发数量">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addRequestCount" layoutX="146.0" layoutY="280.0" prefHeight="30.0" prefWidth="259.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

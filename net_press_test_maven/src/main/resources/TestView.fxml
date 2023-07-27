@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.llb.controller.mainController">
+   <children>
+      <SplitPane dividerPositions="0.23608017817371937" layoutX="296.0" layoutY="203.0" prefHeight="550.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="548.0" prefWidth="674.0">
+               <children>
+                  <Button layoutX="275.0" layoutY="352.0" mnemonicParsing="false" onAction="#showTimeButton" text="点击开始测试">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <TextField fx:id="requestUrl" layoutX="139.0" layoutY="182.0" prefHeight="30.0" prefWidth="505.0" />
+                  <Label layoutX="221.0" layoutY="73.0" text="网站压力测试工具">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="185.0" text="输入测试网址">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="263.0" text="输入并发数量">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="seeTime1" layoutX="139.0" layoutY="260.0" prefHeight="30.0" prefWidth="185.0" />
+                  <Label layoutX="214.0" layoutY="453.0" text="测试结果">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="seeTime11" layoutX="303.0" layoutY="449.0" prefHeight="30.0" prefWidth="208.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
